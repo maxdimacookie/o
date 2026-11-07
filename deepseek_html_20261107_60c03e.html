@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Презентация: Финансовая грамотность, фриланс, стартап</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .deck { width: 100%; max-width: 1100px; padding: 20px; position: relative; }
+  .slide {
+    display: none;
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border: 1px solid #334155;
+    border-radius: 20px;
+    padding: 48px 56px;
+    min-height: 520px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+    animation: fade .35s ease;
+  }
+  .slide.active { display: flex; flex-direction: column; justify-content: center; }
+  @keyframes fade { from { opacity: 0; transform: translateY(8px);} to { opacity: 1; transform: none; } }
+
+  .tag {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #38bdf8;
+    border: 1px solid #0ea5e9;
+    border-radius: 999px;
+    padding: 4px 14px;
+    margin-bottom: 20px;
+    width: fit-content;
+  }
+  h1 { font-size: 44px; line-height: 1.15; margin-bottom: 18px; }
+  h2 { font-size: 34px; line-height: 1.2; margin-bottom: 18px; color: #f8fafc; }
+  p, li { font-size: 21px; line-height: 1.6; color: #cbd5e1; }
+  ul { margin-left: 24px; }
+  li { margin-bottom: 12px; }
+  .accent { color: #38bdf8; }
+  .muted { color: #94a3b8; font-size: 17px; margin-top: 26px; }
+
+  .cover { text-align: left; }
+  .cover h1 span { color: #38bdf8; }
+
+  .nav {
+    position: absolute;
+    bottom: -64px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav button {
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 10px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  .nav button:hover { background: #334155; }
+  .counter { color: #64748b; font-size: 15px; }
+  @media (max-width: 760px) {
+    .slide { padding: 30px 26px; min-height: 480px; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 25px; }
+    p, li { font-size: 17px; }
+    .nav { bottom: -58px; }
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- 0. Титул -->
+  <section class="slide active cover">
+    <span class="tag">Краткий курс</span>
+    <h1>Финансовая грамотность,<br><span>фриланс</span> и <span>стартап</span></h1>
+    <p class="muted">Три базовых блока о том, как обращаться с деньгами, работать на себя и запускать свой проект.</p>
+  </section>
+
+  <!-- 1. Финграмотность: введение -->
+  <section class="slide">
+    <span class="tag">1. Финансовая грамотность</span>
+    <h2>Деньги не появляются сами</h2>
+    <ul>
+      <li>Деньги не берутся из воздуха — их нужно зарабатывать.</li>
+      <li>Работа — основной способ обеспечить себя и близких.</li>
+      <li>Финансовая грамотность начинается с понимания: доход ≠ гарантия.</li>
+    </ul>
+  </section>
+
+  <!-- 2. Финграмотность: траты -->
+  <section class="slide">
+    <span class="tag">1. Финансовая грамотность</span>
+    <h2>Контроль расходов и «подушка безопасности»</h2>
+    <ul>
+      <li>Планируйте, куда уходят деньги, и избегайте импульсивных покупок.</li>
+      <li>Это помогает дожить до конца месяца без кассового разрыва.</li>
+      <li><span class="accent">Подушка безопасности</span> — запас на чёрный день: он выручит при непредвиденных ситуациях.</li>
+    </ul>
+  </section>
+
+  <!-- 3. Финграмотность: инвестиции и накопления -->
+  <section class="slide">
+    <span class="tag">1. Финансовая грамотность</span>
+    <h2>Инвестиции и личные накопления</h2>
+    <ul>
+      <li><span class="accent">Инвестирование</span> — вложение денег в акции или стартапы ради приумножения.</li>
+      <li>Важно понимать, куда вкладываешь, чтобы не потерять средства в прогоревшем проекте.</li>
+      <li><span class="accent">Личные накопления</span> — сохранение денег на крупную покупку, которую пока не можешь себе позволить.</li>
+    </ul>
+  </section>
+
+  <!-- 4. Финграмотность: налоги -->
+  <section class="slide">
+    <span class="tag">1. Финансовая грамотность</span>
+    <h2>Налоги и правовой статус</h2>
+    <ul>
+      <li>Знания о налогах и формах правового статуса помогают при крупных покупках — например, машины или квартиры.</li>
+      <li>Заранее понятно, какой налог придётся заплатить.</li>
+      <li>Помните: при высоком доходе (условно свыше 200 тыс.) налоговая нагрузка выше.</li>
+    </ul>
+  </section>
+
+  <!-- 5. Фриланс: суть -->
+  <section class="slide">
+    <span class="tag">2. Фриланс</span>
+    <h2>Свобода и ответственность</h2>
+    <ul>
+      <li>На фрилансе нет начальника, и работать можно из любого места.</li>
+      <li>Но ответственность за результат — на вас: работу нужно сдать заказчику вовремя.</li>
+      <li>Сроки и договорённости лучше фиксировать заранее.</li>
+    </ul>
+  </section>
+
+  <!-- 6. Фриланс: портфолио -->
+  <section class="slide">
+    <span class="tag">2. Фриланс</span>
+    <h2>Портфолио: только лучшее</h2>
+    <ul>
+      <li>В портфолио стоит включать самые сильные проекты.</li>
+      <li>Заказчик должен сразу понять по странице, подходите ли вы ему.</li>
+      <li>Не нужно выкладывать все работы — достаточно нескольких лучших.</li>
+    </ul>
+  </section>
+
+  <!-- 7. Фриланс: поиск клиентов -->
+  <section class="slide">
+    <span class="tag">2. Фриланс</span>
+    <h2>Где искать клиентов</h2>
+    <ul>
+      <li>Площадки вроде Behance или Kwork.</li>
+      <li>Два сценария: вы публикуете свои услуги — и клиенты приходят сами, либо клиенты публикуют задачи — и фрилансеры откликаются.</li>
+    </ul>
+  </section>
+
+  <!-- 8. Фриланс: договоры -->
+  <section class="slide">
+    <span class="tag">2. Фриланс</span>
+    <h2>Договор защищает обе стороны</h2>
+    <ul>
+      <li>Договор нужен, чтобы заказчик не обманул исполнителя — и наоборот.</li>
+      <li>При наличии договора можно обратиться в суд.</li>
+      <li>Без документальных подтверждений споры решать сложно: «на слово» никто не поверит.</li>
+    </ul>
+  </section>
+
+  <!-- 9. Фриланс: тайм-менеджмент -->
+  <section class="slide">
+    <span class="tag">2. Фриланс</span>
+    <h2>Планирование времени</h2>
+    <ul>
+      <li>Нужно распределять время так, чтобы успевать и работать, и отдыхать.</li>
+      <li>Это помогает сдавать работу вовремя и не делать всё в последний момент.</li>
+      <li>Помогает техника «Помидора»: 30 минут работы — 5 минут отдыха.</li>
+    </ul>
+  </section>
+
+  <!-- 10. Стартап: идея -->
+  <section class="slide">
+    <span class="tag">3. Стартап</span>
+    <h2>Уникальная идея</h2>
+    <ul>
+      <li>Придумайте интересную концепцию проекта.</li>
+      <li>Она должна цеплять людей и не быть копией ещё сотни таких же проектов.</li>
+    </ul>
+  </section>
+
+  <!-- 11. Стартап: MVP -->
+  <section class="slide">
+    <span class="tag">3. Стартап</span>
+    <h2>Сначала — MVP</h2>
+    <ul>
+      <li>MVP (минимально жизнеспособный продукт) — «голое» приложение для проверки гипотезы.</li>
+      <li>Смысл — протестировать идею, не вкладывая все ресурсы в проект, который может не окупиться.</li>
+    </ul>
+  </section>
+
+  <!-- 12. Стартап: рынок -->
+  <section class="slide">
+    <span class="tag">3. Стартап</span>
+    <h2>Исследование рынка</h2>
+    <ul>
+      <li>Изучайте рынок, конкурентов и тренды.</li>
+      <li>Это помогает правильно ставить цены и понимать, что сейчас популярно.</li>
+      <li>Пример актуального тренда — нейросети.</li>
+    </ul>
+  </section>
+
+  <!-- 13. Стартап: команда -->
+  <section class="slide">
+    <span class="tag">3. Стартап</span>
+    <h2>Команда: закрываем слабые места</h2>
+    <ul>
+      <li>Берите людей на те роли, которые сами не закрываете.</li>
+      <li>Плохо получается общение с клиентами — нужен менеджер.</li>
+      <li>Хорошо программируете, но не умеете в дизайн — нужен дизайнер.</li>
+    </ul>
+  </section>
+
+  <!-- 14. Стартап: управление -->
+  <section class="slide">
+    <span class="tag">3. Стартап</span>
+    <h2>Управление проектом</h2>
+    <ul>
+      <li>Руководитель стартапа управляет проектом.</li>
+      <li>Следит, чтобы за каждую роль кто-то отвечал.</li>
+      <li>Контролирует бюджет и развитие проекта.</li>
+    </ul>
+  </section>
+
+  <!-- 15. Финал -->
+  <section class="slide">
+    <span class="tag">Итог</span>
+    <h2>Главное в трёх строках</h2>
+    <ul>
+      <li><span class="accent">Деньги</span> — контроль расходов, резерв и осознанные инвестиции.</li>
+      <li><span class="accent">Фриланс</span> — сильное портфолио, договор и дисциплина.</li>
+      <li><span class="accent">Стартап</span> — уникальная идея, MVP, анализ рынка и команда.</li>
+    </ul>
+    <p class="muted">Спасибо за внимание!</p>
+  </section>
+
+  <div class="nav">
+    <button id="prev">← Назад</button>
+    <span class="counter" id="counter">1 / 16</span>
+    <button id="next">Вперёд →</button>
+  </div>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const counter = document.getElementById('counter');
+  let index = 0;
+
+  function show(i) {
+    slides[index].classList.remove('active');
+    index = (i + slides.length) % slides.length;
+    slides[index].classList.add('active');
+    counter.textContent = (index + 1) + ' / ' + slides.length;
+  }
+
+  document.getElementById('next').addEventListener('click', () => show(index + 1));
+  document.getElementById('prev').addEventListener('click', () => show(index - 1));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') show(index + 1);
+    if (e.key === 'ArrowLeft') show(index - 1);
+  });
+</script>
+</body>
+</html>
